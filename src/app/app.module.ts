@@ -7,6 +7,9 @@ import { TestComponent } from './test/test.component';
 import { ImageListComponent } from './image-list/image-list.component';
 
 
+import { ImageService } from './shared/image.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,7 @@ import { ImageListComponent } from './image-list/image-list.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
