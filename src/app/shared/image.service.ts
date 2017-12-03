@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { Http, Headers } from '@angular/http';
+import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -14,7 +15,7 @@ export class ImageService {
   constructor(private _http: Http){
 
   }
-  getImage(querry){
-    return this._http.get(this.URL + this.query + this.perPage).map(res=>res.json());
+  getImage(query){
+    return this._http.get(this.URL + query + this.perPage).map(res=>res.json());
   }
 }
