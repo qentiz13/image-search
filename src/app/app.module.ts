@@ -8,6 +8,10 @@ import { TestComponent } from './test/test.component';
 import { ImageListComponent } from './image-list/image-list.component';
 
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ImageService } from './shared/image.service';
 
 
@@ -20,7 +24,10 @@ import { ImageService } from './shared/image.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MatCardModule,
+    MatInputModule,
+    MatProgressBarModule
   ],
 
   providers: [ImageService],

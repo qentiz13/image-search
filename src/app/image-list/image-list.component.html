@@ -1,12 +1,17 @@
-<input class="search" [(ngModel)]="searchQuery" placeholder="Search for images">
-<button (click)="searchImages(searchQuery)" type="button">Find Images</button>
-
-<p *ngIf="searching">Fetching data</p>
-
 <div *ngFor="let image of images" class="image-container">
   <img src="{{image.webformatURL}}">
   <p>Tags: {{image.tags}}</p>
   <p>User: {{image.user}}</p>
   <p>Comments: {{image.comments}}</p>
   <p>Likes: {{image.likes}}</p>
+</div>
+
+<mat-card id="search-container">
+  <input class="search" matInput [(ngModel)]="searchQuery" name="search" placeholder="Search for images">
+  <br>
+  <button (click)="searchImages(searchQuery)" mat-button class="searchButton">Find Images</button>
+</mat-card>
+
+<div *ngIf="searching">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </div>
