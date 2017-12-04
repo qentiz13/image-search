@@ -22,6 +22,7 @@ import { ImageService } from './shared/image.service';
     FormsModule,
     HttpModule
   ],
+
   providers: [ImageService],
   bootstrap: [AppComponent]
 })
