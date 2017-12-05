@@ -29,9 +29,13 @@
   border-radius: 2px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
   overflow: hidden;
+  float:left;
 }
 
 .results{
   padding: 8px;
   margin-bottom: 12px;
+}
+.kartica{
+  min-width: 100px;
 }
