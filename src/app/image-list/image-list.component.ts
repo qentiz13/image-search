@@ -22,7 +22,7 @@ export class ImageListComponent implements OnInit {
   }
 
   constructor(private _imageService : ImageService) { }
-
+  searchQuery: string = "";
   searchImages(query: string){
     this.searching = true;
     return this._imageService.getImage(query).subscribe(
