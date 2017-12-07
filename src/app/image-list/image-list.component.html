@@ -1,46 +1,20 @@
-
-
 <mat-card id="search-container">
   <input class="search" matInput [(ngModel)]="searchQuery" name="search" placeholder="Search for images">
   <br>
   <button (click)="searchImages(searchQuery)" mat-button class="searchButton">Find Images</button>
+
 </mat-card>
 
 <div *ngIf="searching">
   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </div>
-<!--<mat-card>
-  <img src="{{image.webformatURL}}">
-  <p>Tags: {{image.tags}}</p>
-  <p>User: {{image.user}}</p>
-  <p>Comments: {{image.comments}}</p>
-  <p>Likes: {{image.likes}}</p>
-</mat-card>-->
 
-    <mat-card *ngFor="let image of images" class="image-container">
-      <a href="{{ image.pageURL }}" target="_bank">
-        <mat-card-header>
-          <div class="avatar" mat-card-avatar [ngStyle]="{'background-image':'url('+ image.userImageURL +')', 'background-size':'40px 40px'}"></div>
-          <mat-card-title>user: {{ image.user }}</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="{{image.webformatURL}}">
-        <mat-card-content>
-          <p>Tags: {{ image.tags }}</p>
-          <p>Comments: {{ image.comments }}</p>
-          <p>Likes: {{ image.likes }}</p>
-        </mat-card-content>
-      </a>
-    </mat-card>
-
-
-
-<!--
 <mat-card>
   <h4 *ngIf="imagesFound" mat-subeader>Results</h4>
-  <masonry>
+  <masonry [useImagesLoaded]="true">
     <masonry-brick *ngFor="let image of images" class="image-container">
       <mat-card>
-        <a href="{{ image.pageUrl }}" target="_bank">
+        <a href="{{ image.pageURL }}" target="_bank">
           <mat-card-header>
             <div class="avatar" mat-card-avatar [ngStyle]="{'background-image':'url('+ image.userImageURL +')', 'background-size':'40px 40px'}"></div>
             <mat-card-title>user: {{ image.user }}</mat-card-title>
@@ -53,7 +27,8 @@
           </mat-card-content>
         </a>
       </mat-card>
-      <br><br>
     </masonry-brick>
   </masonry>
-</mat-card>-->
+</mat-card>
+<br>
+

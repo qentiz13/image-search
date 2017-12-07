@@ -1,41 +1,38 @@
 #search-container{
-    min-width:300px;
+  margin-top:200px;
 }
 
 .search{
-  color:black;
-  height: 70px;
-  max-height: 30px;
-  font-size: 1.5em;
-  max-width: 30%;
-  min-width: 200px;
+height: 50px;
+max-height: 70px;
+font-size: 2.5em;
+color: #333;
+width:100%;
+min-width: 60px;
 }
 
 .avatar{
-  margin-bottom: 7px;
+margin-bottom: 7px;
 }
 
 .searchButton{
-  background-color: #CA1740;
-  color: #fff;
-  margin-top:20px;
+background-color: #CA1740;
+color: #fff;
+margin-top:20px;
+
 }
 
 .image-container{
-  width: 300px;
-  min-height: 100px;
-  max-width: 300px;
-  margin: 8px;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-  overflow: hidden;
-  float:left;
+width: 300px;
+min-height: 100px;
+max-width: 300px;
+margin: 8px;
+border-radius: 2px;
+box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+overflow: hidden;
 }
 
 .results{
-  padding: 8px;
-  margin-bottom: 12px;
-}
-.kartica{
-  min-width: 100px;
+padding: 8px;
+margin-bottom: 12px;
 }

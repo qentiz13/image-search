@@ -13,10 +13,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { ImageService } from './shared/image.service';
-//import { MasonryModule } from 'angular2-masonry';
+import { MasonryModule } from 'angular2-masonry';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+//import { MasonryModule } from 'angular2-masonry';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule,
     MatInputModule,
     MatProgressBarModule,
-    //MasonryModule,
+    MasonryModule,
     MatButtonModule,
     BrowserAnimationsModule,
     MatGridListModule
